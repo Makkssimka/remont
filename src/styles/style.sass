@@ -1,2 +1,59 @@
-h1
+$red: #C01324
+$red-hover: #9b1421
+$blue: #0077b3
+$blue-hover: #1b5f80
+
+a.button
+  margin: 5px
+  display: inline-block
+  padding: 8px 15px
+  font-size: 14px
+  color: #ffffff
+  text-decoration: none
+  text-transform: uppercase
+  transition: background-color 0.3s
+  
+a.red-button
+  background-color: $red
+  &:hover
+    background-color: $red-hover
+
+//Шапка сайта
+
+.header
+  box-shadow: 0 5px 5px rgba(0,0,0,0.22)
+  padding: 10px 0
+  font-size: 18px
+  line-height: 1.4
   text-align: center
+  span
+    font-weight: bold
+  p
+    margin: 0
+
+.logo-header
+  img
+    height: 40px
+    width: auto
+.tel-header
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  a
+    color: $blue
+    text-decoration: none
+    font-weight: bold
+    font-size: 24px
+    transition: color 0.3s
+    &:hover
+      color: $blue-hover
+
+//Баннер первого экрана
+.banner
+  background: url("/images/bg_image.jpg") center center no-repeat
+  background-size: cover
+  h1
+    color: #fff
+    margin-top: 65px
+    font-weight: bold
+    text-align: center
