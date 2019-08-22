@@ -18,9 +18,32 @@ a.red-button
   &:hover
     background-color: $red-hover
 
+.form
+  label>span
+    color: $red
+
+//Модпальные окна
+
+.modal
+  h4
+    text-align: center
+    line-height: 1
+.error-message
+  color: $red
+  text-align: center
+  margin: 10px 0
+.error-icon
+  text-align: center
+  display: block
+  color: $red-hover
+  margin: 0 auto
+
 //Шапка сайта
 
 .header
+  background-color: rgba(255,255,255,0.9)
+  position: sticky
+  top: 0
   box-shadow: 0 5px 5px rgba(0,0,0,0.22)
   padding: 10px 0
   font-size: 18px
@@ -54,6 +77,58 @@ a.red-button
   background-size: cover
   h1
     color: #fff
-    margin-top: 65px
+    font-size: 46px
+    margin-top: 50px
     font-weight: bold
     text-align: center
+  .banner-window
+    text-align: center
+    border: 2px solid $blue
+    padding: 15px
+    margin: 35px auto 35px
+    max-width: 450px
+    background-color: #fff
+  .banner-header
+    h3
+      margin: 0
+      font-weight: bold
+      font-size: 20px
+    p
+      margin: 0
+      font-size: 20px
+      color: $blue
+  .banner-description
+    margin: 15px 0
+  .banner-form
+    input
+      margin-bottom: 10px
+    a
+      display: block
+      margin: 5px 0
+      font-size: 16px
+  .banner-readmore
+    font-size: 14px
+    margin: 5px 0 0
+    a
+      text-decoration: none
+      color: #000
+      border-bottom: 1px dashed #000
+
+//О нас
+.about
+  margin: 40px 0
+  .about-item
+    text-align: center
+    img
+      width: 200px
+      height: auto
+    p
+      font-weight: bold
+      font-size: 18px
+      line-height: 1.3
+
+//Смета
+.smeta
+  padding: 20px 0
+  background: url("/images/smeta_bg.jpg") center center no-repeat
+  background-size: cover
