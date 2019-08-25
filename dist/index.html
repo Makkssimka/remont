@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles/uikit.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
             <div class="uk-width-1-3 name-header">
                 <p>Компания <span>"Випсервис"</span></p>
                 <p>Университетский пр-т, д.74</p>
-                <a class="button red-button" href="#">Вызвать замерщика</a>
+                <a class="button red-button modal-open" data-modal="1" href="#">Вызвать замерщика</a>
             </div>
             <div class="uk-width-1-3 logo-header">
                 <img src="images/logo.png" alt="">
@@ -44,9 +45,9 @@
             <p class="banner-description">Заполните поля ниже, прораб ответит на все вопросы по ремонту, и сориентирует по стоимости ремонта в течение 15 минут.</p>
             <div class="form banner-form">
                 <label class="uk-form-label" for="size">Метраж квартиры (Для точной сметы)</label>
-                <input class="uk-input" type="text" id="size">
+                <input class="uk-input" type="text" id="size" name="size">
                 <label class="uk-form-label" for="number">Номер телефона (На него сообщим стоимость) <span>*</span></label>
-                <input class="uk-input require" data-error="номер телефона" type="text" id="number">
+                <input class="uk-input require" data-error="номер телефона" type="text" id="number" name="tel">
                 <a class="button red-button submit" href="#">Получить консультацию</a>
             </div>
             <p class="banner-readmore">
@@ -77,10 +78,260 @@
 
 <div class="smeta">
     <div class="uk-container">
-
+        <div class="uk-grid">
+            <div class="uk-width-1-2 smeta-calc">
+                <p class="smeta-header">РАССЧИТАЙТЕ <br /><span>ПРЕДВАРИТЕЛЬНУЮ</span> СТОИМОСТЬ БЕЗ <br />ВЫЕЗДА ЗАМЕРЩИКА</p>
+                <div class="form">
+                    <label class="uk-form-label" for="sizeSmeta">Метраж квартиры (Для точной сметы)</label>
+                    <input class="uk-input" type="text" id="sizeSmeta" name="size">
+                    <label class="uk-form-label" for="varSmeta">С какими материалами (Для точной сметы)</label>
+                    <select class="uk-select" name="variant" id="varSmeta">
+                        <option value="">-</option>
+                        <option value="Черновые материалы">Черновые материалы</option>
+                        <option value="С черновыми и чистовыми материалами (скидка 30%)">С черновыми и чистовыми материалами (скидка 30%)</option>
+                        <option value="Без материалов">Без материалов</option>
+                    </select>
+                    <label class="uk-form-label" for="telSmeta">Номер телефона (На него сообщим стоимость) <span>*</span></label>
+                    <input class="uk-input require" type="text" id="telSmeta" data-error="номер телефона" name="tel">
+                    <a class="button red-button submit" href="#">Рассчитать стоимость</a>
+                </div>
+                <p class="banner-readmore">
+                    Нажимая кнопку, вы даете согласие на <a href="#" uk-toggle="target: #readmore">обработку персональных данных</a>
+                </p>
+            </div>
+            <div class="uk-width-1-2 smeta-man">
+                <p class="smeta-header">ВЫЗОВИТЕ ЗАМЕРЩИКА <span>БЕСПЛАТНО</span> И <br /> ПОЛУЧИТЕ СМЕТУ В <span>ДЕНЬ ОБРАЩЕНИЯ</span></p>
+                <img src="images/smeta-man.jpg" alt="">
+                <p>Иван, специалист компании "Випсервис"</p>
+                <a class="button red-button modal-open" data-modal="1" href="#">Вызвать замерщика</a>
+            </div>
+        </div>
     </div>
 </div>
 
+<div class="service">
+    <div class="uk-container">
+        <h2><span>УСЛУГИ</span> НАШЕЙ КОМПАНИИ</h2>
+        <div class="uk-grid">
+            <div class="uk-width-1-3 item-service">
+                <img src="images/service_1.png" alt="">
+                <p>Дизайн интерьеров, проектирование</p>
+                <a class="button blue-button modal-open" data-modal="2" href="#">Узнать подробнее</a>
+            </div>
+            <div class="uk-width-1-3 item-service">
+                <img src="images/service_2.png" alt="">
+                <p>Строительно-монтажные работы</p>
+                <a class="button blue-button modal-open" data-modal="3" href="#">Узнать подробнее</a>
+            </div>
+            <div class="uk-width-1-3 item-service">
+                <img src="images/service_3.png" alt="">
+                <p>Авторский надзор и комплектация</p>
+                <a class="button blue-button modal-open" data-modal="3" href="#">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="variant">
+    <div class="uk-container">
+        <h2><span>ВАРИАНТЫ</span> РЕМОНТА КВАРТИРЫ</h2>
+        <div class="uk-grid">
+            <div class="uk-width-1-3 item-variant">
+                <div class="wrapper-variant">
+                    <img src="images/variant_1.jpg" alt="">
+                    <p class="header-variant">Косметический ремонт</p>
+                    <div class="list-variant-one">
+                        <span>Отлично подходит для:</span>
+                        <ul>
+                            <li>быстрого обновления квартиры</li>
+                            <li>предпродажной подготовки квартиры</li>
+                            <li>сдачи квартиры в аренду</li>
+                        </ul>
+                    </div>
+                    <div class="list-variant-two">
+                       <span>В цену входит:</span>
+                        <ul>
+                            <li>Демонтаж настенных и напольных покрытий</li>
+                            <li>Демонтаж потолочного покрытия </li>
+                            <li>Легкое выравнивание стен</li>
+                            <li>Замена сантехнических приборов</li>
+                            <li>Замена электрических приборов</li>
+                            <li>Укладка напольных покрытий</li>
+                            <li>Поклейка обоев</li>
+                            <li>Работы по покраске поверхностей</li>
+                            <li>Потолочные работы</li>
+                        </ul>
+                    </div>
+                    <a class="button red-button modal-open" data-modal="4" href="#">Рассчитать стоимость</a>
+                </div>
+            </div>
+            <div class="uk-width-1-3 item-variant">
+                <div class="wrapper-variant">
+                    <img src="images/variant_2.jpg" alt="">
+                    <p class="header-variant">Евро ремонт</p>
+                    <div class="list-variant-one">
+                        <span>Отлично подходит для:</span>
+                        <ul>
+                            <li>ремонта в новостройке</li>
+                            <li>ремонта в коттедже</li>
+                            <li>ремонта в старом фонде</li>
+                        </ul>
+                    </div>
+                    <div class="list-variant-two">
+                        <span>В цену входит:</span>
+                        <ul>
+                            <li>Полный комплекс демонтажных работ</li>
+                            <li>Прокладывание трасс инженерных сетей</li>
+                            <li>Выравнивание пола</li>
+                            <li>Штукатурные работы</li>
+                            <li>Финишное выравнивание стен (шпаклевка, шлифовка)</li>
+                            <li>Укладка плитки</li>
+                            <li>Настил напольного покрытия</li>
+                            <li>Поклейка обоев</li>
+                            <li>Работы по покраске поверхностей</li>
+                            <li>Натяжной или многоуровневый потолок</li>
+                            <li>Выравнивание потолка и покраска</li>
+                            <li>Установка осветительных приборов</li>
+                            <li>Монтаж сантехнических приборов</li>
+                        </ul>
+                    </div>
+                    <a class="button red-button modal-open" data-modal="5" href="#">Рассчитать стоимость</a>
+                </div>
+            </div>
+            <div class="uk-width-1-3 item-variant">
+                <div class="wrapper-variant">
+                    <img src="images/variant_3.jpg" alt="">
+                    <p class="header-variant">Ремонт по дизайн-проекту</p>
+                    <div class="list-variant-one">
+                        <span>Отлично подходит для:</span>
+                        <ul>
+                            <li>ремонта в новостройке</li>
+                            <li>ремонта в коттедже</li>
+                            <li>ремонта в старом фонде</li>
+                        </ul>
+                    </div>
+                    <div class="list-variant-two">
+                        <span>В цену входит:</span>
+                        <ul>
+                            <li>Полный комплекс демонтажных работ</li>
+                            <li>Вывоз мусора</li>
+                            <li>Работы по перепланировке и переносу стен</li>
+                            <li>Разработка дизайн-проекта</li>
+                            <li>Разработка электро-проекта</li>
+                            <li>Прокладывание трасс инженерных сетей</li>
+                            <li>Выравнивание пола</li>
+                            <li>Выравнивание стен</li>
+                            <li>Поклейка обоев</li>
+                            <li>Укладка плитки премиум класса (испания, италия, …)</li>
+                            <li>Многоуровневые потолки</li>
+                            <li>Нанесение декоративной штукатурки</li>
+                            <li>Укладка мозаики</li>
+                            <li>Монтаж декоров, лепнины</li>
+                        </ul>
+                    </div>
+                    <a class="button red-button modal-open" data-modal="6" href="#">Рассчитать стоимость</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comments">
+    <div class="uk-container">
+        <h2><span>ОТЗЫВЫ</span> НАШИХ КЛИЕНТОВ</h2>
+        <div class="comments-carousel owl-carousel owl-theme">
+            <div class="item-comments">
+                <div class="date-comment">23.08.2019</div>
+                <div class="img-comment" style="background-image: url('/images/comments_1.jpg');"></div>
+                <div class="block-comment">
+                    <div class="name-comment">Евро-ремонт квартиры 72 кв.м</div>
+                    <div class="size-comment">Площадь помещения: 72 м<sup>2</sup></div>
+                    <div uk-lightbox>
+                        <a class="button blue-button" href="/images/comments_2.jpg">Все фото</a>
+                        <a href="/images/comments_3.jpg"></a>
+                        <a href="/images/comments_4.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comments">
+                <div class="date-comment">23.08.2019</div>
+                <div class="img-comment" style="background-image: url('/images/comments_1.jpg');"></div>
+                <div class="block-comment">
+                    <div class="name-comment">Капитальный ремонт квартиры 72 кв.м</div>
+                    <div class="size-comment">Площадь помещения: 72 м<sup>2</sup></div>
+                    <div uk-lightbox>
+                        <a class="button blue-button" href="/images/comments_2.jpg">Все фото</a>
+                        <a href="/images/comments_3.jpg"></a>
+                        <a href="/images/comments_4.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comments">
+                <div class="date-comment">23.08.2019</div>
+                <div class="img-comment" style="background-image: url('/images/comments_1.jpg');"></div>
+                <div class="block-comment">
+                    <div class="name-comment">Дизайнерский ремнт квартиры 72 кв.м</div>
+                    <div class="size-comment">Площадь помещения: 72 м<sup>2</sup></div>
+                    <div uk-lightbox>
+                        <a class="button blue-button" href="/images/comments_2.jpg">Все фото</a>
+                        <a href="/images/comments_3.jpg"></a>
+                        <a href="/images/comments_4.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comments">
+                <div class="date-comment">23.08.2019</div>
+                <div class="img-comment" style="background-image: url('/images/comments_1.jpg');"></div>
+                <div class="block-comment">
+                    <div class="name-comment">Капитальный ремонт квартиры 72 кв.м</div>
+                    <div class="size-comment">Площадь помещения: 72 м<sup>2</sup></div>
+                    <div uk-lightbox>
+                        <a class="button blue-button" href="/images/comments_2.jpg">Все фото</a>
+                        <a href="/images/comments_3.jpg"></a>
+                        <a href="/images/comments_4.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comments">
+                <div class="date-comment">23.08.2019</div>
+                <div class="img-comment" style="background-image: url('/images/comments_1.jpg');"></div>
+                <div class="block-comment">
+                    <div class="name-comment">Капитальный ремонт квартиры 72 кв.м</div>
+                    <div class="size-comment">Площадь помещения: 72 м<sup>2</sup></div>
+                    <div uk-lightbox>
+                        <a class="button blue-button" href="/images/comments_2.jpg">Все фото</a>
+                        <a href="/images/comments_3.jpg"></a>
+                        <a href="/images/comments_4.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top">
+    <div class="uk-container">
+        <h2>ВХОДИМ <span>В ТОП-5</span> ЛУЧШИХ ИСПОЛНИТЕЛЕЙ</h2>
+        <div class="top-list uk-grid">
+            <div class="uk-width-1-3 top-item">
+                <img src="images/top_1.png" alt="">
+            </div>
+            <div class="uk-width-1-3 top-item">
+                <img src="images/top_2.jpg" alt="">
+            </div>
+            <div class="uk-width-1-3 top-item">
+                <img src="images/top_3.png" alt="">
+            </div>
+        </div>
+        <p class="top-readmore">*По рейтингу наших клиентов за 2009-2018 </p>
+    </div>
+</div>
+
+<div class="process">
+    <div class="uk-container">
+        <h2>ИДЕАЛЬНЫЙ <span>ПРОЦЕСС РЕМОНТА</span> КВАРТИРЫ</h2>
+    </div>
+</div>
 
 <!-- Блок модальных окон -->
 <div id="readmore" class="modal" uk-modal>
@@ -93,9 +344,26 @@
     </div>
 </div>
 
+<div id="optionModal" class="modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h4 class="uk-modal-title">Заполните форму и в течение 15 минут с вами свяжется специалист и согласует время замера</h4>
+        <div class="form">
+            <label class="uk-form-label" for="telGager">Номер телефона <span>*</span></label>
+            <input class="uk-input require" type="text" id="telGager" data-error="номер телефона" name="tel">
+            <a class="button red-button submit" href="#">Записаться на замер</a>
+        </div>
+        <p class="banner-readmore">
+            Нажимая кнопку, вы даете согласие на <a href="#" uk-toggle="target: #readmore">обработку персональных данных</a>
+        </p>
+    </div>
+</div>
+
+
 <script src="scripts/jquery-3.4.1.min.js"></script>
 <script src="scripts/uikit.min.js"></script>
 <script src="scripts/uikit-icons.min.js"></script>
+<script src="scripts/owl.carousel.min.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>
