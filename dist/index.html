@@ -330,8 +330,110 @@
 <div class="process">
     <div class="uk-container">
         <h2>ИДЕАЛЬНЫЙ <span>ПРОЦЕСС РЕМОНТА</span> КВАРТИРЫ</h2>
-        <img src="images/zasel.svg" style="width: 85px; height: auto;" alt="">
+        <ul>
+            <li>
+                <div class="process-number">1</div>
+                <img src="images/telefone.svg" alt="">
+                <div class="process-desc">
+                    Вы оставляете заявку или звоните по телефону
+                    <span>8 (8442) 50-69-69</span>
+                </div>
+            </li>
+            <li>
+                <div class="process-number">2</div>
+                <img src="images/man.svg" alt="">
+                <div class="process-desc">
+                    Вас консультирует по телефону специалист и на объект выезжает инженер-сметчик
+                </div>
+            </li>
+            <li>
+                <div class="process-number">3</div>
+                <img src="images/calc.svg" alt="">
+                <div class="process-desc">
+                    По вашим требованиям считается и согласовывается точная смета на ремонт
+                </div>
+            </li>
+            <li>
+                <div class="process-number">4</div>
+                <img src="images/dogovor.svg" alt="">
+                <div class="process-desc">
+                    Подписывается договор с точными сроками на ремонт
+                </div>
+            </li>
+            <li>
+                <div class="process-number">5</div>
+                <img src="images/srok.svg" alt="">
+                <div class="process-desc">
+                    Начинаем работы на вашем объекте
+                </div>
+            </li>
+            <li>
+                <div class="process-number">6</div>
+                <img src="images/complite.svg" alt="">
+                <div class="process-desc">
+                    Сдача работы и внесение оплаты
+                </div>
+            </li>
+            <li>
+                <div class="process-number">7</div>
+                <img src="images/zasel.svg" alt="">
+                <div class="process-desc">
+                    Заселение в квартиру
+                </div>
+            </li>
+            <li>
+                <div class="process-number">#</div>
+                <img src="images/contact.svg" alt="">
+                <div class="process-desc">
+                    <a class="button red-button modal-open" data-modal="1" href="#">Вызвать замерщика</a>
+                </div>
+            </li>
+        </ul>
     </div>
+</div>
+
+<div class="calc-build">
+    <div class="uk-container">
+        <h2>КАЛЬКУЛЯТОР СТОИМОСТИ <span>РЕМОНТА КВАРТИРЫ</span></h2>
+        <div class="form uk-grid">
+            <div class="uk-width-1-4">
+                <label class="uk-form-label" for="sizeCalc">Площадь квартиры <span>(Например: 85 м2)</span></label>
+                <input class="uk-input" type="text" id="sizeCalc" name="size">
+            </div>
+            <div class="uk-width-1-4">
+                <label class="uk-form-label" for="variantCalc">Выберите вид ремонта <span>(для точной сметы)</span></label>
+                <select class="uk-select" name="variant" id="variantCalc">
+                    <option value="">-</option>
+                    <option value="Косметический">Косметический</option>
+                    <option value="Евро-ремонт">Евро-ремонт</option>
+                    <option value="По дизайн-проекту">По дизайн-проекту</option>
+                </select>
+            </div>
+            <div class="uk-width-1-4">
+                <label class="uk-form-label" for="vidCalc">Вид объекта <span>(для точной сметы)</span></label>
+                <select class="uk-select" name="vid" id="vidCalc">
+                    <option value="">-</option>
+                    <option value="Старый фонд">Старый фонд</option>
+                    <option value="Новостройка">Новостройка</option>
+                    <option value="Коттедж">Коттедж</option>
+                </select>
+            </div>
+            <div class="uk-width-1-4">
+                <label class="uk-form-label" for="telCalc">Номер телефона <span>(на него сообщим стоимость)*</span></label>
+                <input class="uk-input require" data-error="номер телефона" type="text" id="telCalc" name="tel">
+            </div>
+            <div class="calc-button uk-width-4-4">
+                <a class="button red-button submit" href="#">Рассчитать стоимость</a>
+            </div>
+            <p class="banner-readmore uk-width-4-4">
+                Нажимая кнопку, вы даете согласие на <a href="#" uk-toggle="target: #readmore">обработку персональных данных</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio">
+
 </div>
 
 <!-- Блок модальных окон -->

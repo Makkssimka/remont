@@ -29,6 +29,11 @@ h2 {
 .form label > span {
   color: #C01324; }
 
+.form .uk-input, .form .uk-select, .form .uk-textarea {
+  border: 1px solid #cbcbcb; }
+  .form .uk-input:focus, .form .uk-select:focus, .form .uk-textarea:focus {
+    border: 1px solid #0077b3; }
+
 .banner-readmore {
   font-size: 14px;
   margin: 5px 0 0; }
@@ -256,3 +261,66 @@ h2 {
       width: 100%; }
   .top .top-readmore {
     text-align: center; }
+
+.process ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .process ul li {
+    padding: 25px;
+    width: calc(50% - 50px);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s; }
+    .process ul li:hover {
+      background-color: #eeeeee; }
+      .process ul li:hover .process-number {
+        background-color: #9b1421; }
+
+.process .process-number {
+  padding: 14px 28px;
+  border-radius: 37px;
+  font-size: 32px;
+  background: #0077b3;
+  color: #fff;
+  transition: background-color 0.3s; }
+
+.process .process-desc {
+  font-size: 18px;
+  line-height: 1.2; }
+  .process .process-desc a {
+    font-size: 18px; }
+  .process .process-desc span {
+    display: block;
+    color: #9b1421;
+    font-weight: bold;
+    font-size: 22px; }
+
+.process img {
+  margin: 0 15px;
+  height: 85px;
+  width: auto; }
+
+.calc-build {
+  margin-top: 15px;
+  padding: 20px 0;
+  background: url("/images/smeta_bg.jpg") center center no-repeat;
+  background-size: cover; }
+  .calc-build label {
+    font-size: 18px;
+    line-height: 1.2; }
+    .calc-build label span {
+      display: block;
+      font-size: 16px;
+      color: #0077b3;
+      margin-bottom: 8px; }
+  .calc-build .calc-button {
+    display: block;
+    text-align: center;
+    margin: 15px 0; }
+    .calc-build .calc-button a {
+      font-size: 18px; }
+  .calc-build .banner-readmore {
+    text-align: center;
+    margin-bottom: 20px; }

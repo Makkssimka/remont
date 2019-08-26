@@ -3,6 +3,7 @@ $red-hover: #9b1421
 $blue: #0077b3
 $blue-hover: #1b5f80
 $grey: #d2d2d2
+$grey-hover: #eeeeee
 
 a.button
   margin: 5px
@@ -35,6 +36,10 @@ h2
 .form
   label>span
     color: $red
+  .uk-input, .uk-select, .uk-textarea
+    border: 1px solid #cbcbcb
+    &:focus
+      border: 1px solid $blue
 
 .banner-readmore
   font-size: 14px
@@ -274,3 +279,65 @@ h2
   .top-readmore
     text-align: center
 
+//Процесс
+.process
+  ul
+    margin: 0
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    li
+      padding: 25px
+      width: calc(50% - 50px)
+      display: flex
+      align-items: center
+      transition: background-color 0.3s
+      &:hover
+        background-color: $grey-hover
+        .process-number
+          background-color: $red-hover
+  .process-number
+    padding: 14px 28px
+    border-radius: 37px
+    font-size: 32px
+    background: $blue
+    color: #fff
+    transition: background-color 0.3s
+  .process-desc
+    font-size: 18px
+    line-height: 1.2
+    a
+      font-size: 18px
+    span
+      display: block
+      color: $red-hover
+      font-weight: bold
+      font-size: 22px
+  img
+    margin: 0 15px
+    height: 85px
+    width: auto
+
+//Стоимость ремонта
+.calc-build
+  margin-top: 15px
+  padding: 20px 0
+  background: url("/images/smeta_bg.jpg") center center no-repeat
+  background-size: cover
+  label
+    font-size: 18px
+    line-height: 1.2
+    span
+      display: block
+      font-size: 16px
+      color: $blue
+      margin-bottom: 8px
+  .calc-button
+    display: block
+    text-align: center
+    margin: 15px 0
+    a
+      font-size: 18px
+  .banner-readmore
+    text-align: center
+    margin-bottom: 20px
