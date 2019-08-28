@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a.button {
   margin: 5px;
   display: inline-block;
@@ -324,3 +325,76 @@ h2 {
   .calc-build .banner-readmore {
     text-align: center;
     margin-bottom: 20px; }
+
+.portfolio .item-portfolio {
+  padding: 10px;
+  border: 2px solid #d2d2d2;
+  transition: border 0.3s; }
+  .portfolio .item-portfolio:hover {
+    border: 2px solid #1b5f80; }
+  .portfolio .item-portfolio p {
+    margin: 0 10px; }
+  .portfolio .item-portfolio .header-portfolio {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #0077b3;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px; }
+  .portfolio .item-portfolio .info {
+    color: #000;
+    font-weight: bold; }
+  .portfolio .item-portfolio .price-portfolio {
+    font-weight: bold;
+    font-size: 30px;
+    color: #C01324;
+    text-align: center;
+    margin: 10px 0; }
+  .portfolio .item-portfolio .img-portfolio-wrapper {
+    position: relative;
+    padding-top: 56%;
+    margin: 8px 0 8px; }
+    .portfolio .item-portfolio .img-portfolio-wrapper:before {
+      display: block;
+      content: "";
+      width: 100%; }
+    .portfolio .item-portfolio .img-portfolio-wrapper .img-portfolio-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: #d2d2d2 center center no-repeat;
+      background-size: cover;
+      opacity: 0.8;
+      transition: opacity 0.3s; }
+      .portfolio .item-portfolio .img-portfolio-wrapper .img-portfolio-content:hover {
+        opacity: 1; }
+  .portfolio .item-portfolio .portfolio-before:after {
+    content: "до";
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    left: 15px;
+    background-color: #0077b3;
+    color: #fff;
+    font-size: 18px;
+    padding: 1px 10px 4px; }
+  .portfolio .item-portfolio .portfolio-after:after {
+    content: "после";
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    left: 15px;
+    background-color: #0077b3;
+    color: #fff;
+    font-size: 18px;
+    padding: 1px 10px 4px; }
+  .portfolio .item-portfolio .more-portfolio {
+    text-align: center; }
+    .portfolio .item-portfolio .more-portfolio .button {
+      margin: 8px 0; }
+
+.portfolio .owl-nav {
+  margin-top: 8px;
+  text-align: center; }

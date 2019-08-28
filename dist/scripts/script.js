@@ -82,5 +82,26 @@ $(document).ready(function () {
         }
     });
 
+    //Галлереи портфолио
+    $(".portfolio-carousel").owlCarousel({
+        margin: 10,
+        nav: true,
+        navText: [
+            '<span uk-icon="icon: chevron-left; ratio: 2"></span>',
+            '<span uk-icon="icon: chevron-right; ratio: 2"></span>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
 
 });
