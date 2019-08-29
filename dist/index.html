@@ -512,6 +512,60 @@
     </div>
 </div>
 
+<div class="material">
+    <div class="uk-container">
+        <h2>КАЛЬКУЛЯТОР СТОИМОСТИ <span>МАТЕРИАЛОВ</span></h2>
+        <div class="uk-grid">
+            <div class="uk-width-1-3 material-desc">
+                <p class="material-partner">Вы <span>сэкономите до 30%</span> с нами на материалах для ремонта</p>
+                <img src="images/lm_logo.png" alt="">
+                <img src="images/obi_logo.png" alt="">
+                <img src="images/saturn_logo.png" alt="">
+            </div>
+            <div class="uk-width-2-3 form-material">
+                <div class="form uk-grid uk-grid-medium uk-flex-center">
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label" for="sizeMaterial">Площадь квартиры <span>(Например: 85 м2)</span></label>
+                        <input class="uk-input" type="text" id="sizeMaterial" name="size">
+                    </div>
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label" for="variantMaterial">Выберите вид ремонта <span>(для точной сметы)</span></label>
+                        <select class="uk-select" name="variant" id="variantMaterial">
+                            <option value="">-</option>
+                            <option value="Косметический">Косметический</option>
+                            <option value="Евро-ремонт">Евро-ремонт</option>
+                            <option value="По дизайн-проекту">По дизайн-проекту</option>
+                        </select>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label" for="vidMaterial">Вид объекта <span>(для точной сметы)</span></label>
+                        <select class="uk-select" name="vid" id="vidMaterial">
+                            <option value="">-</option>
+                            <option value="Старый фонд">Старый фонд</option>
+                            <option value="Новостройка">Новостройка</option>
+                            <option value="Коттедж">Коттедж</option>
+                        </select>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label" for="roomMaterial">Количество комнат <span>(для точной сметы)</span></label>
+                        <input class="uk-input" type="text" id="roomMaterial" name="room">
+                    </div>
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label" for="telMaterial">Номер телефона <span>(на него сообщим стоимость)*</span></label>
+                        <input class="uk-input require" data-error="номер телефона" type="text" id="telMaterial" name="tel">
+                    </div>
+                    <div class="material-button uk-width-4-4">
+                        <a class="button red-button submit" href="#">Рассчитать стоимость</a>
+                    </div>
+                    <p class="banner-readmore uk-width-4-4">
+                        Нажимая кнопку, вы даете согласие на <a href="#" uk-toggle="target: #readmore">обработку персональных данных</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Блок модальных окон -->
 <div id="readmore" class="modal" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">

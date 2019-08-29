@@ -398,3 +398,38 @@ h2 {
 .portfolio .owl-nav {
   margin-top: 8px;
   text-align: center; }
+
+.material {
+  padding: 20px 0;
+  background: url("/images/smeta_bg.jpg") center center no-repeat;
+  background-size: cover; }
+  .material .material-partner {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000; }
+    .material .material-partner span {
+      color: #C01324;
+      font-weight: bold; }
+  .material .material-desc {
+    text-align: center; }
+    .material .material-desc img {
+      width: 70%;
+      margin: 8px 0; }
+  .material .form-material .uk-width-1-2 {
+    margin-top: 15px; }
+  .material .form-material label {
+    font-size: 18px;
+    line-height: 1.2; }
+    .material .form-material label span {
+      display: block;
+      font-size: 16px;
+      color: #0077b3;
+      margin-bottom: 8px; }
+  .material .form-material .material-button {
+    text-align: center;
+    margin-top: 20px; }
+  .material .form-material .button {
+    font-size: 18px; }
+  .material .form-material .banner-readmore {
+    margin-top: 10px;
+    text-align: center; }
